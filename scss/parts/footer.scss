@@ -1,0 +1,20 @@
+footer {
+  background-color: #120e19;
+  color: white;
+  padding: 59px 0 62px 0;
+  .footer-contents {
+    text-align: center;
+    li {
+      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 0 12px;
+    }
+    .copyright {
+      color: #a798b7;
+      padding: 22px 0 0 4px;
+      letter-spacing: 0.4;
+      font-size: 10px;
+    }
+  }
+}

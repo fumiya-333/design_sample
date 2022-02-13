@@ -1,0 +1,59 @@
+@import "../common/mixin.scss";
+
+.news-box {
+  .news-area {
+    max-width: 920px;
+    padding-top: 70px;
+    display: flex;
+    margin: 0 auto;
+    .news-head {
+      color: #391E88;
+      @include mq(sp) {
+        text-align: center;
+      }
+    }
+    @include mq(sp) {
+      display: block;
+    }
+    .news-body {
+      line-height: 1.35;
+      padding-left: 57px;
+      flex: 1;
+      @include mq(sp) {        
+        padding-left: 0;
+      }
+      .news-item {
+        display: flex;
+        @include mq(sp) {        
+          display: block;
+        }
+        .news-item-head {
+          display: flex;
+          padding-bottom: 16px;
+          .news-body-date {
+            padding-right: 19px;
+            letter-spacing: 1px;
+          }
+          .news-body-tip-box {
+            .news-body-tip {
+              width: 83px;
+              font-size: 0.75rem;
+              font-weight: bold;
+              background-color: #E8E8E8;
+              padding: 3px 0 2px 0;
+              border-radius: 12px;
+              text-align: center;
+              letter-spacing: 1px;
+              display: inline-block;
+            }
+          }
+        }
+        .news-body-text {
+          font-size: 15.7px;
+          padding: 0 0 16px 18px;
+          flex: 1;
+        }
+      }
+    }
+  }
+}

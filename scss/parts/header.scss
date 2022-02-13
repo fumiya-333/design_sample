@@ -1,0 +1,42 @@
+@import "../common/mixin.scss";
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  padding: 30px 15px 30px 30px;
+  display: flex;
+  box-sizing: border-box;
+  @include mq(sp) {
+    padding: 22px 0 22px 15px;
+  }
+  .logo {
+    img {
+      @include mq(sp) {
+        width: 124px;
+        height: 22px;
+      }
+    }
+  }
+  .menu {
+    padding-right: 15px;
+    margin-left: auto;
+    @include mq(sp) {
+      display: none;
+    }
+    li {
+      a {
+        font-weight: bold;
+        font-size: 15px;
+        letter-spacing: 1;
+        color: white;
+      }
+    }
+    .menu-recruit {
+      margin-right: 18px;
+    }
+    .menu-company, .menu-works, .menu-service, .menu-news {
+      margin-right: 20px;
+    }
+  }
+}

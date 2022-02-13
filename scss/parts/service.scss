@@ -1,0 +1,44 @@
+@import "../common/mixin.scss";
+
+.service-box {
+  padding: 125px 0 138px 0;
+  .service-area {
+    max-width: 1114px;
+    margin: 0 auto;
+    .service-head {
+      color: #391E88;
+      text-align: center;
+      h2 {
+        letter-spacing: 2;
+      }
+    }
+    .service-contents-box {
+      padding-top: 26px;
+      display: flex;
+      @include mq(sp) {
+        display: block;
+      }
+      .service-contents {
+        width: 350px;
+        &:not(:last-child) {
+          margin-right: 31px;
+        }
+        .service-contents-title {
+          font-size: 18px;
+          text-align: center;
+          font-weight: bold;
+          padding: 20px 0 10px 0;
+          letter-spacing: 1px;
+        }
+        .service-contents-text {
+          font-size: 16px;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+  .more-btn-area {
+    padding-top: 22px;
+    text-align: center;
+  }
+}

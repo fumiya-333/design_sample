@@ -1,0 +1,50 @@
+@import "../common/mixin.scss";
+
+.works-box {
+  padding-bottom: 89px;
+  .works-area {
+    max-width: 1260px;
+    height: 590px;
+    padding-top: 62px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #fff 0%, #fff 33.7%, #f0f0f0 33.7%, #f0f0f0 100%);
+    display: flex;
+    @include mq(sp) {
+      background: white;
+      display: block;
+    }
+    img {
+      max-width: 750px;
+      max-height: 500px;
+      padding-left: 3px;
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+    .works-head-box {
+      max-width: 830px;
+      background-color: #f0f0f0;
+      color: #391E88;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      .works-head {
+        padding: 0 24px 60px 0;
+        text-align: center;
+        h2 {
+          letter-spacing: 2;
+        }
+        .works-head-text {
+          color: black;
+          font-size: 16px;
+          padding-top: 22px;
+          line-height: 1.7;
+        }
+        .more-btn-area {
+          padding-top: 23px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "common/style.scss";
+@import "common/btn.scss";
+@import "parts/header.scss";
+@import "parts/footer.scss";
+@import "parts/top.scss";
+@import "parts/news.scss";
+@import "parts/service.scss";
+@import "parts/works.scss";
+@import "parts/company.scss";
+@import "parts/recruit.scss";
+@import "parts/contact.scss";
+@import "parts/page_top.scss";
+
+.wrapper {
+  h2 {
+    font-size: 36px;
+    p {
+      font-size: 14px;
+      padding-top: 1px;
+    }
+  }
+}

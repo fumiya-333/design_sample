@@ -1,0 +1,49 @@
+.contact-btn {
+  background: transparent;
+  border: 1px solid #FFF;
+  color: white;
+  letter-spacing: 0.1em;
+  padding: 22px 64px 20px 70px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    top: 50%;
+    right: 1.5em;
+    margin-top: -6px;
+  }
+}
+
+.more-btn {
+  width: 200px;
+  height: 62px;
+  background: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+  background-size: 200% auto;
+  border: 1px solid #FFF;
+  color: white;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent white;
+    position: absolute;
+    top: 50%;
+    right: 1.5em;
+    margin-top: -6px;
+  }
+}

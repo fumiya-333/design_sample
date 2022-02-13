@@ -1,0 +1,49 @@
+@import "../common/mixin.scss";
+
+.company-box {
+  .company-area {
+    width: 100%;
+    height: 650px;
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+    background-image: url("../img/bg-circle.png"), url("../img/bg-face.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center;
+
+    .company-head-box {
+      color: #391E88;
+      display: inline-block;
+      width: 645px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 108px 0 0 8px;
+      @include mq(sp) {
+        width: 100%;
+      }
+      h2 {
+        letter-spacing: 2;
+      }
+      .company-head {
+        padding-top: 28px;
+        .company-head-title {
+          color: black;
+          font-size: 38px;
+          font-weight: bold;
+          text-align: start;
+          letter-spacing: 4.1px;
+          background: linear-gradient(transparent 80%, #FFFF00 0%);
+        }
+        .company-head-text {
+          color: black;
+          font-size: 16px;
+          padding-top: 32px;
+          line-height: 1.7;
+        }
+        .more-btn-area {
+          padding-top: 24px;
+        }
+      }
+    }
+  }
+}
