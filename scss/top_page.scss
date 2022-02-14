@@ -1,5 +1,6 @@
 @import "common/style.scss";
 @import "common/btn.scss";
+@import "common/mixin.scss";
 @import "parts/header.scss";
 @import "parts/footer.scss";
 @import "parts/top.scss";
@@ -14,9 +15,16 @@
 .wrapper {
   h2 {
     font-size: 36px;
+    @include mq(sp) {
+      font-size: 30px;
+    }
     p {
       font-size: 14px;
       padding-top: 1px;
+      @include mq(sp) {
+        font-size: 13px;
+        padding-top: 2px;
+      }
     }
   }
 }

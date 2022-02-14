@@ -6,6 +6,9 @@
     padding-top: 70px;
     display: flex;
     margin: 0 auto;
+    @include mq(sp) {
+      padding-top: 40px;
+    }
     .news-head {
       color: #391E88;
       @include mq(sp) {
@@ -26,18 +29,25 @@
         display: flex;
         @include mq(sp) {        
           display: block;
+          padding: 28px 20px 5px 20px;
         }
         .news-item-head {
           display: flex;
           padding-bottom: 16px;
+          @include mq(sp) {        
+            padding: 0;
+          }
           .news-body-date {
             padding-right: 19px;
             letter-spacing: 1px;
+            @include mq(sp) {
+              padding-right: 14px;
+            }
           }
           .news-body-tip-box {
             .news-body-tip {
               width: 83px;
-              font-size: 0.75rem;
+              font-size: 12px;
               font-weight: bold;
               background-color: #E8E8E8;
               padding: 3px 0 2px 0;
@@ -45,6 +55,9 @@
               text-align: center;
               letter-spacing: 1px;
               display: inline-block;
+              @include mq(sp) {
+                font-size: 11px;
+              }
             }
           }
         }
@@ -52,6 +65,12 @@
           font-size: 15.7px;
           padding: 0 0 16px 18px;
           flex: 1;
+          @include mq(sp) {
+            padding: 0;
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 0.6;
+          }
         }
       }
     }

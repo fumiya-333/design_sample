@@ -27,8 +27,10 @@ $(function(){
 
   function scrollTop(){
     $(window).scroll(function(){
-      if($(this).scrollTop() > SCROLL_TOP_RECT && isWindowType() !== WINDOW_TYPE_SP){
-        $('#page-top').show();
+      if($(this).scrollTop() > SCROLL_TOP_RECT){
+        if(isWindowType() !== WINDOW_TYPE_SP){
+          $('#page-top').show();
+        }
         $('#header').css('background-color', '#21054D');
       }else{
         $('#page-top').hide();

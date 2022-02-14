@@ -2,6 +2,9 @@
 
 .service-box {
   padding: 125px 0 138px 0;
+  @include mq(sp) {
+    padding: 68px 0 138px 0;
+  }
   .service-area {
     max-width: 1114px;
     margin: 0 auto;
@@ -16,12 +19,21 @@
       padding-top: 26px;
       display: flex;
       @include mq(sp) {
+        padding: 28px 20px 0 20px;
         display: block;
       }
       .service-contents {
-        width: 350px;
         &:not(:last-child) {
           margin-right: 31px;
+          @include mq(sp) {
+            margin-right: 0;
+            margin-bottom: 31px;
+          }
+        }
+        img {
+          @include mq(sp) {
+            width: 335px;
+          }
         }
         .service-contents-title {
           font-size: 18px;
@@ -29,10 +41,18 @@
           font-weight: bold;
           padding: 20px 0 10px 0;
           letter-spacing: 1px;
+          @include mq(sp) {
+            padding: 0;
+          }
         }
         .service-contents-text {
-          font-size: 16px;
+          color: #333333;
+          font-size: 15px;
           line-height: 1.7;
+          @include mq(sp) {
+            font-size: 14px;
+            padding-top: 4px;
+          }
         }
       }
     }
