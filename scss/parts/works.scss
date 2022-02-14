@@ -18,25 +18,30 @@
       max-height: 500px;
       padding-left: 3px;
       @include mq(sp) {
-        width: 100%;
+        width: calc(100% - 40px);
+        padding-left: 20px;
       }
     }
     .works-head-box {
       max-width: 830px;
       background-color: #f0f0f0;
-      color: #391E88;
       display: flex;
       justify-content: center;
       align-items: center;
       flex: 1;
+      h2 {
+        color: #391E88;
+      }
       .works-head {
         padding: 0 24px 60px 0;
         text-align: center;
+        @include mq(sp) {
+          padding: 40px 0 60px 0;
+        }
         h2 {
           letter-spacing: 2;
         }
         .works-head-text {
-          color: black;
           font-size: 16px;
           padding-top: 22px;
           line-height: 1.7;

@@ -7,6 +7,7 @@
     display: flex;
     margin: 0 auto;
     @include mq(sp) {
+      display: block;
       padding-top: 40px;
     }
     .news-head {
@@ -15,12 +16,9 @@
         text-align: center;
       }
     }
-    @include mq(sp) {
-      display: block;
-    }
     .news-body {
       line-height: 1.35;
-      padding-left: 57px;
+      padding-left: 50px;
       flex: 1;
       @include mq(sp) {        
         padding-left: 0;
@@ -31,30 +29,34 @@
           display: block;
           padding: 28px 20px 5px 20px;
         }
+        &:not(:last-child) {
+          padding-bottom: 12px;
+        }
         .news-item-head {
           display: flex;
-          padding-bottom: 16px;
           @include mq(sp) {        
             padding: 0;
           }
           .news-body-date {
-            padding-right: 19px;
-            letter-spacing: 1px;
+            padding: 2px 0 0 5px;
+            letter-spacing: 0.1em;
             @include mq(sp) {
               padding-right: 14px;
             }
           }
           .news-body-tip-box {
+            padding-left: 20px;
             .news-body-tip {
-              width: 83px;
+              width: 82px;
+              height: 22px;
               font-size: 12px;
               font-weight: bold;
               background-color: #E8E8E8;
-              padding: 3px 0 2px 0;
+              letter-spacing: 0.05em;
               border-radius: 12px;
               text-align: center;
-              letter-spacing: 1px;
               display: inline-block;
+              line-height: 22px;
               @include mq(sp) {
                 font-size: 11px;
               }
@@ -62,9 +64,11 @@
           }
         }
         .news-body-text {
-          font-size: 15.7px;
-          padding: 0 0 16px 18px;
+          font-size: 15px;
+          padding: 4px 0 0 20px;
+          font-family: "Hiragino Sans";
           flex: 1;
+          letter-spacing: 0.05em;
           @include mq(sp) {
             padding: 0;
             font-size: 14px;

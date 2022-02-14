@@ -1,7 +1,7 @@
 @import "../common/mixin.scss";
 
 .service-box {
-  padding: 125px 0 138px 0;
+  padding: 140px 0;
   @include mq(sp) {
     padding: 68px 0 138px 0;
   }
@@ -27,38 +27,44 @@
           margin-right: 31px;
           @include mq(sp) {
             margin-right: 0;
-            margin-bottom: 31px;
+            margin-bottom: 37px;
           }
         }
         img {
           @include mq(sp) {
             width: 335px;
+            padding-bottom: 3px;
           }
         }
         .service-contents-title {
           font-size: 18px;
           text-align: center;
           font-weight: bold;
-          padding: 20px 0 10px 0;
-          letter-spacing: 1px;
+          padding: 24px 0 17px 0;
+          line-height: 0.9;
+          letter-spacing: 0.05em;
           @include mq(sp) {
             padding: 0;
+            line-height: 1.2;
+            margin-bottom: 4px;
           }
         }
         .service-contents-text {
-          color: #333333;
+          font-family: "Hiragino Sans";
           font-size: 15px;
-          line-height: 1.7;
+          line-height: 1.8;
+          letter-spacing: 0.05em;
           @include mq(sp) {
             font-size: 14px;
-            padding-top: 4px;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
           }
         }
       }
     }
   }
   .more-btn-area {
-    padding-top: 22px;
+    padding-top: 25px;
     text-align: center;
   }
 }

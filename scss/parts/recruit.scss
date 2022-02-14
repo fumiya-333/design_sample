@@ -12,7 +12,6 @@
     }
     .recruit-head-box {
       background-color: #f0f0f0;
-      color: #391E88;
       flex: 1;
       text-align: center;
       padding: 72px 16px;
@@ -21,10 +20,10 @@
       }
       .recruit-head {
         h2 {
+          color: #391E88;
           letter-spacing: 2;
         }
         .recruit-head-text {
-          color: black;
           font-size: 16px;
           padding-top: 24px;
         }

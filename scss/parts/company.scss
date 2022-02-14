@@ -12,22 +12,21 @@
     background-position: center;
 
     .company-head-box {
-      color: #391E88;
       display: inline-block;
       width: 645px;
       margin: 0 auto;
       text-align: center;
       padding: 108px 0 0 8px;
+      h2 {
+        color: #391E88;
+        letter-spacing: 2;
+      }
       @include mq(sp) {
         width: 100%;
-      }
-      h2 {
-        letter-spacing: 2;
       }
       .company-head {
         padding-top: 28px;
         .company-head-title {
-          color: black;
           font-size: 38px;
           font-weight: bold;
           text-align: start;
@@ -35,8 +34,6 @@
           background: linear-gradient(transparent 80%, #FFFF00 0%);
         }
         .company-head-text {
-          color: black;
-          font-size: 16px;
           padding-top: 32px;
           line-height: 1.7;
         }
