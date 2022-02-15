@@ -3,8 +3,8 @@
     <div class="news-head">
       <h2>
         NEWS
-        <p>お知らせ</p>
       </h2>
+      <p>お知らせ</p>
     </div>
     <div class="news-body">
       <div class="news-item">

@@ -3,8 +3,8 @@
       <div class="company-head-box">
         <h2>
           COMPANY
-          <p>私たちについて</p>
         </h2>
+        <p>私たちについて</p>
         <div class="company-head">
           <div class="company-head-title">サイトのゴール = 夢を叶えること</div>
           <div class="company-head-text">

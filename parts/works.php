@@ -5,8 +5,8 @@
       <div class="works-head">
         <h2>
           WORKS
-          <p>制作実績</p>
         </h2>
+        <p>制作実績</p>
         <div class="works-head-text">
           様々なジャンルのWebサイト制作が可能です。
           <br>

@@ -3,8 +3,8 @@
     <div class="service-head">
       <h2>
         SERVICE
-        <p>事業内容</p>
       </h2>
+      <p>事業内容</p>
     </div>
     <div class="service-contents-box">
       <div class="service-contents"> <img src="<?php bloginfo('template_directory'); ?>/img/service01.jpg" alt="service01" width="350" height="220" class="service-img" />

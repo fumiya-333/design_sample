@@ -4,8 +4,8 @@
       <div class="recruit-head">
         <h2> 
           RECRUIT
-          <p>採用情報</p>
         </h2>
+        <p>採用情報</p>
         <div class="recruit-head-text">
           私たちと一緒に働きませんか？<br>
         </div>
