@@ -3,7 +3,7 @@
 .service-box {
   padding: 140px 0;
   @include mq(sp) {
-    padding: 68px 0 138px 0;
+    padding: 72px 0 138px 0;
   }
   .service-area {
     max-width: 1114px;
@@ -43,7 +43,7 @@
           @include mq(sp) {
             padding: 0;
             line-height: 1.2;
-            margin-bottom: 4px;
+            padding-top: 14px;
           }
         }
         .service-contents-text {
@@ -53,8 +53,7 @@
           letter-spacing: 0.05em;
           @include mq(sp) {
             font-size: 14px;
-            line-height: 1.8;
-            letter-spacing: 0.05em;
+            padding-top: 4px;
           }
         }
       }
