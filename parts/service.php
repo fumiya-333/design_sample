@@ -6,7 +6,7 @@
       </h2>
       <p>事業内容</p>
     </div>
-    <div class="service-contents-box">
+    <div class="service-body">
       <div class="service-contents"> <img src="<?php bloginfo('template_directory'); ?>/img/service01.jpg" alt="service01" width="350" height="<?php print wp_is_mobile() ? 210 : 220 ?>" class="service-img" />
         <div class="service-contents-title">Webサイト制作</div>
         <div class="service-contents-text">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</div>
