@@ -11,7 +11,7 @@
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
 
-    .company-head-box {
+    .company-contents-box {
       display: inline-block;
       width: 864px;
       margin: 0 auto;
@@ -19,11 +19,14 @@
       padding-top: 109px;
       @include mq(sp) {
         width: 100%;
+        padding-top: 82px;
       }
-      .company-head {
+      .company-contents {
         padding-top: 40px;
-        font-family: "Hiragino Sans";
-        .company-head-title {
+        @include mq(sp) {
+          padding-top: 22px;
+        }
+        .company-contents-title {
           max-width: 648px;
           font-size: 40px;
           font-weight: bold;
@@ -31,14 +34,29 @@
           line-height: 0.8;
           letter-spacing: 0.05em;
           display: inline-block;
+          @include mq(sp) {
+            max-width: 280px;
+            font-size: 32px;
+            line-height: 1.5;
+          }
         } 
-        .company-head-text {
+        .company-contents-text {
           padding-top: 46px;
           line-height: 1.8;
           letter-spacing: 0.05em;
+          @include mq(sp) {
+            max-width: 295px;
+            font-size: 14px;
+            line-height: 1.8;
+            display: inline-block;
+            padding: 30px;
+          }
         }
         .more-btn-area {
           padding-top: 28px;
+          @include mq(sp) {
+            padding: 0px;
+          }
         }
       }
     }

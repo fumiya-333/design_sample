@@ -2,6 +2,10 @@
 
 .works-box {
   padding-bottom: 89px;
+  @include mq(sp) {
+    padding-top: 12px;
+    padding-bottom: 0px;
+  }
   .works-area {
     max-width: 1260px;
     height: 590px;
@@ -10,7 +14,8 @@
     background: linear-gradient(90deg, #fff 0%, #fff 33.7%, #f0f0f0 33.7%, #f0f0f0 100%);
     display: flex;
     @include mq(sp) {
-      background: white;
+      height: auto;
+      // background: white;
       display: block;
       padding-top: 0;
     }
@@ -23,23 +28,28 @@
         padding-left: 20px;
       }
     }
-    .works-head-box {
+    .works-body-box {
       max-width: 830px;
       background-color: #f0f0f0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex: 1;
-      .works-head {
+      .works-body {
         padding: 0 24px 60px 0;
         text-align: center;
         @include mq(sp) {
           padding: 40px 0 60px 0;
         }
-        .works-head-text {
+        .works-body-text {
           font-size: 16px;
           padding-top: 22px;
           line-height: 1.7;
+          letter-spacing: 0.05em;
+          @include mq(sp) {
+            font-size: 14px;
+            padding-top: 23px;
+          }
         }
         .more-btn-area {
           padding-top: 23px;

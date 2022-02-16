@@ -1,3 +1,5 @@
+@import "../common/mixin.scss";
+
 footer {
   background-color: #120e19;
   color: white;
@@ -9,6 +11,11 @@ footer {
       font-size: 14px;
       font-weight: bold;
       padding: 0 12px;
+      @include mq(sp) {
+        font-size: 12px;
+        line-height: 1.25;
+        padding-bottom: 20px;
+      }
     }
     .copyright {
       color: #a798b7;

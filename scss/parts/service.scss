@@ -3,7 +3,7 @@
 .service-box {
   padding: 140px 0;
   @include mq(sp) {
-    padding: 72px 0 0 0;
+    padding: 74px 0 0 0;
   }
   .service-area {
     max-width: 1114px;
@@ -24,7 +24,7 @@
           margin-right: 31px;
           @include mq(sp) {
             margin-right: 0;
-            margin-bottom: 37px;
+            margin-bottom: 40px;
           }
         }
         img {
@@ -47,13 +47,11 @@
           }
         }
         .service-contents-text {
-          font-family: "Hiragino Sans";
           font-size: 15px;
           line-height: 1.8;
           letter-spacing: 0.05em;
           @include mq(sp) {
             font-size: 14px;
-            padding-top: 4px;
           }
         }
       }

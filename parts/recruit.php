@@ -14,6 +14,6 @@
         </div>
       </div>
     </div>
-    <div class="recruit-img-box"><img src="<?php bloginfo('template_directory'); ?>/img/recruit.jpg" height="100%"></div>
+    <div class="recruit-img-box"><img src="<?php bloginfo('template_directory'); ?>/img/recruit.jpg" height="<?= wp_is_mobile() ? 140 : "100%" ?>"></div>
   </section>
 </div>
