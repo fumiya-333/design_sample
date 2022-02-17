@@ -1,5 +1,5 @@
 <header id="header">
-  <a href="" class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="svg"/></a>
+  <a href="<?= esc_url(home_url()) ?>" class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt="svg"/></a>
   <div class="menu">
     <ul>
       <li class="menu-news"><a href="<?= esc_url(home_url()) ?>/news">NEWS</a></li>

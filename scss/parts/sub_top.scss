@@ -1,0 +1,13 @@
+@import "../common/mixin.scss";
+
+.sub-top {
+  height: 240px;
+  background-image: url("../img/hero.jpg");
+  .sub-top-body {
+    padding-top: 106px;
+    text-align: center;
+    h2, p {
+      color: white!important;
+    }
+  }
+}

@@ -1,11 +1,12 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/top_page.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/news_page.css">
   </head>
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
+      <?php get_template_part('parts/sub_top'); ?>
       <?php get_footer(); ?>
       <?php get_template_part('parts/page_top'); ?>
     </div>
