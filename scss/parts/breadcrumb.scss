@@ -1,0 +1,11 @@
+@import "../common/mixin.scss";
+
+.breadclumb {
+  height: 45px;
+  background-color: #F7F7F7;
+  .breadclumb-contents {
+    font-size: 12px;
+    padding: 15px 165px;
+    letter-spacing: 0.05em;
+  }
+}

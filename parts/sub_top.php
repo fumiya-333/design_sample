@@ -1,8 +1,8 @@
 <div class="sub-top">
   <div class="sub-top-body">
     <h2>
-      NEWS
+      <?= $args["subtop_title"] ?>
     </h2>
-    <p>お知らせ</p>
+    <p><?= $args["subtop_subtext"] ?></p>
   </div> 
 </div>
