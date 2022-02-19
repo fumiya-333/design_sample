@@ -1,8 +1,7 @@
 @import "../common/mixin.scss";
 
 .news-contents {
-  padding-top: 60px;
-  padding-left: 265px;
+  padding: 60px 0 40px 265px;
   .news-contents-row {
     display: flex;
     margin-bottom: 14px;
@@ -12,17 +11,20 @@
       letter-spacing: 0.1em;
     }
     .news-contents-tip {
-      height: 22px;
       border-radius: 12px;
       background-color: #E8E8E8;
-      padding: 1px 16px 0 16px;
+      height: 22px;
+      width: 82px;
+      padding-top: 1px;
       margin-right: 20px;
+      text-align: center;
       font-size: 12px;
       font-weight: bold;
       letter-spacing: 0.05em;
       line-height: 22px;
     }
     .news-contents-text {
+      line-height: 1.8;
       font-family: "Hiragino Sans";
       font-weight: 300;
       letter-spacing: 0.05em;
