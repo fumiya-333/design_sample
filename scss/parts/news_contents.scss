@@ -1,35 +1,50 @@
 @import "../common/mixin.scss";
+@import "../common/label.scss";
 
 .news-contents {
   padding: 60px 0 40px 265px;
+  @include mq(sp) {
+    padding: 40px 20px 40px 20px;
+  }
   .news-contents-row {
     display: flex;
+    @include mq(sp) {
+      display: block;
+    }
     &:not(:last-child) {
       margin-bottom: 14px;
+      @include mq(sp) {
+        margin-bottom: 25px;
+      }
     }
-    .news-contents-date {
-      margin-top: 2px;
-      margin-right: 20px;
-      letter-spacing: 0.1em;
-    }
-    .news-contents-tip {
-      border-radius: 12px;
-      background-color: #E8E8E8;
-      height: 22px;
-      width: 82px;
-      padding-top: 1px;
-      margin-right: 20px;
-      text-align: center;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 0.05em;
-      line-height: 22px;
+    .news-contents-left {
+      display: flex;
+      @include mq(sp) {
+        padding-bottom: 2px;
+      }
+      .news-contents-date {
+        margin-top: 2px;
+        margin-right: 20px;
+        letter-spacing: 0.1em;
+        @include mq(sp) {
+          margin-right: 15px;
+          font-size: 15px;
+        }
+      }
+      .news-contents-tip {
+        @extend .base-tip;
+        padding-top: 1px;
+        margin-right: 20px;
+      }
     }
     .news-contents-text {
       line-height: 1.8;
       font-family: "Hiragino Sans";
       font-weight: 300;
       letter-spacing: 0.05em;
+      a {
+        color: #333333;
+      }
     }
   }
 }

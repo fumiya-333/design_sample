@@ -3,9 +3,16 @@
 .breadclumb {
   height: 45px;
   background-color: #F7F7F7;
+  @include mq(sp) {
+    height: 25px;
+  }
   .breadclumb-contents {
-    font-size: 12px;
     padding: 15px 165px;
+    font-size: 12px;
     letter-spacing: 0.05em;
+    @include mq(sp) {
+      padding: 6px 20px;
+      font-size: 11px;
+    }
   }
 }

@@ -3,9 +3,15 @@
 .sub-top {
   height: 240px;
   background-image: url("../img/hero.jpg");
+  @include mq(sp) {
+    height: 190px;
+  }
   .sub-top-body {
     padding-top: 106px;
     text-align: center;
+    @include mq(sp) {
+      padding-top: 93px;
+    }
     h2, p {
       color: white!important;
     }

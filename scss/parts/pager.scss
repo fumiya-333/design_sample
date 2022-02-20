@@ -13,9 +13,12 @@
 
 .pager {
   text-align: center;
+  padding-bottom: 110px;
+  @include mq(sp) {
+    padding-bottom: 80px;
+  }
   .pager-contents {
     display: inline-block;
-    padding-bottom: 110px;
     .pager-link {
       @extend .base-pager-link;
       background-image: url("../img/oblong2.png");
