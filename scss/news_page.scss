@@ -9,27 +9,3 @@
 @import "parts/footer.scss";
 @import "parts/breadcrumb.scss";
 @import "parts/page_top.scss";
-
-.wrapper {
-  h2 {
-    color: #391E88;
-    font-size: 36px;
-    line-height: 0.9;
-    letter-spacing: 0.05em;
-    padding-top: 5px;
-    @include mq(sp) {
-      font-size: 30px!important;
-    }
-    + p {
-      color: #391E88;
-      font-size: 14px;
-      letter-spacing: 0.05em;
-      padding-top: 5px;
-      font-weight: bold;
-      @include mq(sp) {
-        font-size: 13px;
-        padding-top: 5px;
-      }
-    }
-  }
-}
