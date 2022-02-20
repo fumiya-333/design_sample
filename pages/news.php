@@ -2,14 +2,14 @@
   $args = [
     "subtop_title" => "NEWS",
     "subtop_subtext" => "お知らせ",
-    "breadclumb" => [
+    "breadclumb" => [[
       "name" => "HOME",
       "url" => esc_url(home_url())
     ],
     [
       "name" => "NEWS",
       "url" => ""
-    ],
+    ]],
     "news_contents" => [[
       "news_date" => "2030.02.01",
       "news_tip" => "制作実績",
