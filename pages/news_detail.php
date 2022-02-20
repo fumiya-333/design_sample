@@ -109,13 +109,14 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/news_page.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/news_detail_page.css">
   </head>
   <body>
     <div class="wrapper">
       <?php get_header(); ?>
       <?php get_template_part('parts/sub_top', null, $args); ?>
       <?php get_template_part('parts/breadcrumb', null, $args); ?>
+      <?php get_template_part('parts/news_detail_contents'); ?>
       <?php get_template_part('parts/contact'); ?>
       <?php get_footer(); ?>
       <?php get_template_part('parts/page_top'); ?>
