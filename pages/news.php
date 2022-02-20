@@ -2,7 +2,14 @@
   $args = [
     "subtop_title" => "NEWS",
     "subtop_subtext" => "お知らせ",
-    "breadclumb" => ["HOME","NEWS"],
+    "breadclumb" => [
+      "name" => "HOME",
+      "url" => esc_url(home_url())
+    ],
+    [
+      "name" => "NEWS",
+      "url" => ""
+    ],
     "news_contents" => [[
       "news_date" => "2030.02.01",
       "news_tip" => "制作実績",
@@ -106,6 +113,7 @@
       <?php get_template_part('parts/sub_top', null, $args); ?>
       <?php get_template_part('parts/breadcrumb', null, $args); ?>
       <?php get_template_part('parts/news_contents', null, $args); ?>
+      <?php get_template_part('parts/pager'); ?>
       <?php get_template_part('parts/contact'); ?>
       <?php get_footer(); ?>
       <?php get_template_part('parts/page_top'); ?>

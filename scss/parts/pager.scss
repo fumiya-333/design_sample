@@ -1,0 +1,36 @@
+@import "../common/mixin.scss";
+
+.base-pager-link {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 45px;
+}
+
+.pager {
+  text-align: center;
+  .pager-contents {
+    display: inline-block;
+    padding-bottom: 110px;
+    .pager-link {
+      @extend .base-pager-link;
+      background-image: url("../img/oblong2.png");
+      color: white;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    .pager-link-outline {
+      @extend .base-pager-link;
+      background-image: url("../img/oblong1.png");
+      color: #4F31A5;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

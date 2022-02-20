@@ -4,7 +4,9 @@
   padding: 60px 0 40px 265px;
   .news-contents-row {
     display: flex;
-    margin-bottom: 14px;
+    &:not(:last-child) {
+      margin-bottom: 14px;
+    }
     .news-contents-date {
       margin-top: 2px;
       margin-right: 20px;
