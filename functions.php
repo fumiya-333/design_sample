@@ -18,6 +18,8 @@ function get_include_file_path(){
     return "pages/news_detail";
   }else if(esc_url(home_url()) . "/service" === get_current_link()){
     return "pages/service";
+  }else if(esc_url(home_url()) . "/works" === get_current_link()){
+    return "pages/works";
   }else{
     return "pages/top";
   }

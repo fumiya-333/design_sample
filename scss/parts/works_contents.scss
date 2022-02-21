@@ -1,0 +1,22 @@
+@import "../common/mixin.scss";
+
+.works-contents {
+  .works {
+    max-width: 1110px;
+    margin: 70px auto 110px auto;
+    display: flex;
+    flex-wrap: wrap;
+    .works-item {
+      text-align: center;
+      margin-bottom: 28px;
+      &:not(:nth-child(3n)){
+        margin-right: 30px;
+      }
+      .works-item-name {
+        margin-top: 14px;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+      }
+    }
+  }
+}
