@@ -2,7 +2,7 @@
   <div class="service">
     <div class="service-row">
       <div class="service-left">
-        <img src="<?php bloginfo('template_directory'); ?>/img/service01.jpg" alt="service01" width="445" height="<?php print wp_is_mobile() ? 210 : 280 ?>" class="service-img" />
+        <img src="<?php bloginfo('template_directory'); ?>/img/service01.jpg" alt="service01" width="<?php print wp_is_mobile() ? 335 : 445 ?>" height="<?php print wp_is_mobile() ? 211 : 280 ?>" class="service-img" />
       </div>
       <div class="service-right">
         <div class="service-title">Webサイト制作</div>
@@ -11,7 +11,7 @@
     </div>
     <div class="service-row">
       <div class="service-left">
-        <img src="<?php bloginfo('template_directory'); ?>/img/service02.jpg" alt="service01" width="445" height="<?php print wp_is_mobile() ? 210 : 280 ?>" class="service-img" />
+        <img src="<?php bloginfo('template_directory'); ?>/img/service02.jpg" alt="service01" width="<?php print wp_is_mobile() ? 335 : 445 ?>" height="<?php print wp_is_mobile() ? 211 : 280 ?>" class="service-img" />
       </div>
       <div class="service-right">
         <div class="service-title">Webサイト運用</div>
@@ -20,7 +20,7 @@
     </div>
     <div class="service-row">
       <div class="service-left">
-        <img src="<?php bloginfo('template_directory'); ?>/img/service03.jpg" alt="service01" width="445" height="<?php print wp_is_mobile() ? 210 : 280 ?>" class="service-img" />
+        <img src="<?php bloginfo('template_directory'); ?>/img/service03.jpg" alt="service01" width="<?php print wp_is_mobile() ? 335 : 445 ?>" height="<?php print wp_is_mobile() ? 211 : 280 ?>" class="service-img" />
       </div>
       <div class="service-right">
         <div class="service-title">アプリ開発</div>

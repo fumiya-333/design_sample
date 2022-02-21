@@ -4,9 +4,16 @@
   .service {
     max-width: 1110px;
     margin: 70px auto 110px auto;
+    @include mq(sp) {
+      margin: 40px 20px 80px 20px;
+    }
     .service-row {
       display: flex;
       margin-bottom: 60px;
+      @include mq(sp) {
+        display: block;
+        margin-bottom: 50px;
+      }
       .service-left {
         margin-right: 50px;
       }
@@ -16,6 +23,11 @@
           margin-bottom: 20px;
           font-size: 24px;
           font-weight: bold;
+          @include mq(sp) {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+          }
         }
         .service-text {
           line-height: 1.8;
