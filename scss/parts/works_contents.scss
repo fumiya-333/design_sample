@@ -6,16 +6,28 @@
     margin: 70px auto 110px auto;
     display: flex;
     flex-wrap: wrap;
+    @include mq(sp) {
+      margin: 40px 15px 80px 15px;
+    }
     .works-item {
       text-align: center;
       margin-bottom: 28px;
+      @include mq(sp) {
+        margin-bottom: 40px;
+      }
       &:not(:nth-child(3n)){
         margin-right: 30px;
+        @include mq(sp) {
+          margin-right: 0px;
+        }
       }
       .works-item-name {
         margin-top: 14px;
         font-size: 16px;
         letter-spacing: 0.05em;
+        @include mq(sp) {
+          margin-top: 15.4px;
+        }
       }
     }
   }
