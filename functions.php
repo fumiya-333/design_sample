@@ -16,6 +16,8 @@ function get_include_file_path(){
     return "pages/news";
   }else if(esc_url(home_url()) . "/news?id=1" === get_current_link()){
     return "pages/news_detail";
+  }else if(esc_url(home_url()) . "/service" === get_current_link()){
+    return "pages/service";
   }else{
     return "pages/top";
   }

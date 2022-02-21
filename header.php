@@ -3,11 +3,11 @@
   <div class="menu">
     <ul>
       <li class="menu-news"><a href="<?= esc_url(home_url()) ?>/news">NEWS</a></li>
-      <li class="menu-service"><a href="">SERVICE</a></li>
-      <li class="menu-works"><a href="">WORKS</a></li>
-      <li class="menu-company"><a href="">COMPANY</a></li>
-      <li class="menu-recruit"><a href="">RECRUIT</a></li>
-      <li class="menu-contact"><a href="">CONTACT</a></li>
+      <li class="menu-service"><a href="<?= esc_url(home_url()) ?>/service">SERVICE</a></li>
+      <li class="menu-works"><a href="<?= esc_url(home_url()) ?>/works">WORKS</a></li>
+      <li class="menu-company"><a href="<?= esc_url(home_url()) ?>/company">COMPANY</a></li>
+      <li class="menu-recruit"><a href="<?= esc_url(home_url()) ?>/recruit">RECRUIT</a></li>
+      <li class="menu-contact"><a href="<?= esc_url(home_url()) ?>/contact">CONTACT</a></li>
     </ul>
   </div>
 </header>

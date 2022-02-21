@@ -1,0 +1,26 @@
+@import "../common/mixin.scss";
+
+.service-contents {
+  .service {
+    max-width: 1110px;
+    margin: 70px auto 110px auto;
+    .service-row {
+      display: flex;
+      margin-bottom: 60px;
+      .service-left {
+        margin-right: 50px;
+      }
+      .service-right {
+        letter-spacing: 0.05em;
+        .service-title {
+          margin-bottom: 20px;
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .service-text {
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
