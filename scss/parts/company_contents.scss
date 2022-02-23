@@ -39,4 +39,58 @@
       }
     }
   }
+  .company-president {
+    padding: 56px 0 140px 165px;
+    display: flex;
+    .company-president-img {
+      margin-right: 50px;
+    }
+    .company-president-message {
+      max-width: 606px;
+      font-weight: 300;
+      letter-spacing: 0.05em;
+      line-height: 1.7;
+    }
+  }
+  .company-overview {
+    max-width: 1110.5px;
+    margin: 0 auto;
+    .company-overview-title {
+      text-align: center;
+      color: #391E88;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    .company-overview-table {
+      width: 100%;
+      tr {
+        td, th {
+          letter-spacing: 0.05em;
+          border-bottom: 1px solid #DDDDDD;
+        }
+        td {
+          font-weight: 300;
+        }
+        th {
+          width: 174px;
+          padding: 30.5px 0 28.5px 30px;
+          text-align: left;
+          font-weight: 600;
+        }
+      }
+    }
+    .company-googlemap {
+      padding-top: 60.5px;
+      .company-googlemap-view {
+        padding-top: 10px;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        a {
+          color: #240C6A;
+        }
+      }
+    }
+  }
 }
