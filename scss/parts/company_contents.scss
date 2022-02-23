@@ -1,0 +1,42 @@
+@import "../common/mixin.scss";
+@import "../common/label.scss";
+
+.company-contents {
+  padding-bottom: 110px;
+  .company-message-box {
+    height: 466px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-image: url("../img/bg-circle.png"), url("../img/bg-face.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center -20px, center 40px;
+    .company-message {
+      max-width: 666px;
+      margin: 0 auto;
+      .company-message-head {
+        padding-top: 100px;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #391E88;
+      }
+      .company-message-title {
+        padding-top: 31px;
+        font-family: "Hiragino Sans";
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        line-height: 0.8;
+        text-align: center;
+        background: linear-gradient(transparent 80%, #FFFF00 0%);
+      }
+      .company-message-text {
+        padding-top: 31px;
+        letter-spacing: 0.05em;
+        line-height: 1.7;
+        text-align: center;
+      }
+    }
+  }
+}
