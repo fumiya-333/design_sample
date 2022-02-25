@@ -1,0 +1,22 @@
+.table {
+  width: 100%;
+  tr {
+    * {
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid #DDDDDD;
+      @include mq(sp) {
+        font-size: 16px;
+      }
+    }
+    th {
+      text-align: left;
+      font-weight: 600;
+      @include mq(sp) {
+        border-bottom: none!important;
+      }
+    }
+    td {
+      font-weight: 300;
+    }
+  }
+}

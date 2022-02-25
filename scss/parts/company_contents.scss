@@ -1,5 +1,6 @@
 @import "../common/mixin.scss";
 @import "../common/label.scss";
+@import "../common/table.scss";
 
 .company-contents {
   padding-bottom: 110px;
@@ -100,15 +101,8 @@
       }
     }
     .company-overview-table {
-      width: 100%;
+      @extend .table;
       tr {
-        * {
-          letter-spacing: 0.05em;
-          border-bottom: 1px solid #DDDDDD;
-          @include mq(sp) {
-            font-size: 16px;
-          }
-        }
         @include mq(sp) {
           &:first-child {
             th {
@@ -119,16 +113,12 @@
         th {
           width: 174px;
           padding: 30.5px 0 28.5px 30px;
-          text-align: left;
-          font-weight: 600;
           @include mq(sp) {
             width: auto;
             padding: 20.5px 0 10px 0;
-            border-bottom: none!important;
           }
         }
         td {
-          font-weight: 300;
           @include mq(sp) {
             padding-bottom: 20.5px;
           }

@@ -1,0 +1,114 @@
+@import "../common/mixin.scss";
+@import "../common/table.scss";
+
+.recruit-contents {
+  background-image: url("../img/bg-geometry.png");
+  padding-bottom: 110px;
+  .recruit-header {
+    text-align: center;
+    .recruit-header-title {
+      padding-top: 116px;
+      font-size: 72px;
+      font-weight: bold;
+      color: #391E88;
+      letter-spacing: 0.01em;
+    }
+    .recruit-header-sub-title {
+      padding-top: 15px;
+      font-family: "Hiragino Sans";
+      font-size: 32px;
+      font-weight: 300;
+      color: #391E88;
+      letter-spacing: 0.05em;
+    }
+    .recruit-header-text {
+      padding-top: 40px;
+      font-size: 16px;
+      letter-spacing: 0.05em;
+      line-height: 1.75;
+    }
+    .recruit-header-img {
+      height: 779px;
+      background-image: url("../img/recruit01.jpg");
+      background-repeat: no-repeat;
+      background-position: center 80%;
+      background-size: cover;
+      clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    }
+  }
+  .recruit-arrival {
+    max-width: 1110px;
+    margin: 0 auto;
+    .recruit-arrival-title {
+      padding-bottom: 40px;
+      font-family: "Hiragino Sans";
+      font-size: 32px;
+      font-weight: 700;
+      color: #391E88;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+    .recruit-arrival-form {
+      padding: 60px 95px 60px 95px;
+      border: 1px solid #B8AED5;
+      border-radius: 10px;
+      background-color: white;
+      .recruit-arrival-form-title {
+        padding-bottom: 48px;
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+      table {
+        @extend .table;
+        tr {
+          @include mq(sp) {
+            &:first-child {
+              th {
+                padding-top: 0px!important;
+              }
+            }
+          }
+          td, th {
+            padding-bottom: 30.5px;
+            &:not(&:first-child) {
+              padding-top: 30.5px;
+            }
+          }
+          th {
+            width: 180px;
+            padding-left: 21px;
+          }
+        }
+      }
+      .more-btn-area {
+        padding-top: 50.5px;
+        text-align: center;
+        .transition-recruit {
+          padding-top: 10px;
+          font-size: 12px;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+  .in-house-movie {
+    padding-top: 140px;
+    .in-house-movie-title {
+      padding-bottom: 40px;
+      font-family: "Hiragino Sans";
+      font-size: 32px;
+      font-weight: 700;
+      color: #391E88;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+    .in-house-movie-contents {
+      max-width: 1110px;
+      height: 624px;
+      margin: 0 auto;
+      background-color: #EBEBEB;
+    }
+  }
+}

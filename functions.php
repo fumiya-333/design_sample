@@ -22,6 +22,8 @@ function get_include_file_path(){
     return "pages/works";
   }else if(esc_url(home_url()) . "/company" === get_current_link()){
     return "pages/company";
+  }else if(esc_url(home_url()) . "/recruit" === get_current_link()){
+    return "pages/recruit";
   }else{
     return "pages/top";
   }
