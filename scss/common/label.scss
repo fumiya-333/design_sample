@@ -14,3 +14,23 @@
     line-height: 19px;
   }
 }
+
+.base-input {
+  margin: 0;
+  padding: 0;
+}
+
+.base-textarea {
+  resize: none;
+}
+
+.base-select {
+  font-family: "Hiragino Sans";
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: #333333;
+  -webkit-appearance: none;/* ベンダープレフィックス(Google Chrome、Safari用) */
+  -moz-appearance: none; /* ベンダープレフィックス(Firefox用) */
+  appearance: none; /* 標準のスタイルを無効にする */
+}

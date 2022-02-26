@@ -1,0 +1,79 @@
+@import "../common/mixin.scss";
+@import "../common/label.scss";
+
+.contact-contents {
+  padding-bottom: 70px;
+  .contact-contents-title {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-family: "Hiragino Sans";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+  }
+  .contact-form {
+    max-width: 1110px;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    padding: 90px 0;
+    .contact-form-wrap {
+      padding-left: 90px;
+      .form-top {
+        padding-top: 30px;
+      }
+      .contact-form-title {
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        span {
+          padding-left: 10px;
+          font-size: 12px;
+          color: #391E88;
+        }
+        .contact-form-title-hyphen {
+          font-weight: 300;
+          color: #333333!important;
+        }
+      }
+      .contact-form-body-radio {
+        padding-top: 17px;
+        span {
+          padding-right: 35px;
+        }
+      }
+      .contact-form-body {
+        padding-top: 10px;
+        input {
+          &[type=text], &[type=email] {
+            @extend .base-input;
+            width: 300px;
+            height: 40px;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+          }
+        }
+        textarea {
+          @extend .base-textarea;
+          width: 601px;
+          height: 255px;
+          border: none;
+          border-radius: 6px;
+        }
+        select {
+          @extend .base-select;
+          width: 300px;
+          height: 40px;
+          padding-left: 12px;
+          border: none;
+          border-radius: 6px;
+        }
+      }
+      .send-btn-area {
+        padding-top: 50px;
+        text-align: center;
+      }
+    }
+  }
+}
