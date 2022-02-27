@@ -8,7 +8,15 @@ $(function(){
   init();
 
   function init() {
+    addEvent();
     scrollTop();
+  }
+
+  function addEvent() {
+    $('#hamburger').on('click', function(){
+      $('#nav').css('display', $('#hamburger').hasClass('hamburger-open') ? 'none' : 'block');
+      $('#hamburger').toggleClass('hamburger-open');
+    });
   }
 
   function isWindowType(){
